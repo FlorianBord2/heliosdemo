@@ -1,0 +1,8 @@
+{
+	"db_adresse":"localhost",
+	"port":"8086",
+	"db":"etude-dijon",
+	"user":"admin",
+	"password":"admin",
+	"tolerence_min":0.50
+}
