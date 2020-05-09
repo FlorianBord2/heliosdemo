@@ -1,0 +1,1003 @@
+{
+	"meta": {
+		"chronografVersion": "1.7.17",
+		"sources": {
+			"1": {
+				"name": "Influx 1",
+				"link": "/chronograf/v1/sources/1"
+			}
+		}
+	},
+	"dashboard": {
+		"id": 2,
+		"cells": [
+			{
+				"i": "d09ee63b-274a-434b-9528-a91a8dfdd03c",
+				"x": 0,
+				"y": 0,
+				"w": 5,
+				"h": 4,
+				"name": "Fiabiliter des detection rue 1",
+				"queries": [
+					{
+						"query": "SELECT mean(\"value\") AS \"mean_value\" FROM \"etude-dijon\".\"autogen\".\"entity\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: AND \"type\"='2' AND \"street\"='rue 1' GROUP BY time(:interval:) FILL(null)",
+						"queryConfig": {
+							"database": "etude-dijon",
+							"measurement": "entity",
+							"retentionPolicy": "autogen",
+							"fields": [
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_value",
+									"args": [
+										{
+											"value": "value",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {
+								"street": [
+									"rue 1"
+								],
+								"type": [
+									"2"
+								]
+							},
+							"groupBy": {
+								"time": "auto",
+								"tags": []
+							},
+							"areTagsAccepted": true,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "/chronograf/v1/sources/1",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "bar",
+				"colors": [
+					{
+						"id": "223f82f7-dbec-4418-98d3-969d5ac75cc9",
+						"type": "scale",
+						"hex": "#8F8AF4",
+						"name": "Do Androids Dream of Electric Sheep?",
+						"value": "0"
+					},
+					{
+						"id": "478869d6-fa24-409f-a5b0-9db8fac45fe3",
+						"type": "scale",
+						"hex": "#A51414",
+						"name": "Do Androids Dream of Electric Sheep?",
+						"value": "0"
+					},
+					{
+						"id": "28d2b55b-7797-4b5c-9bcc-87556afe5cd4",
+						"type": "scale",
+						"hex": "#F4CF31",
+						"name": "Do Androids Dream of Electric Sheep?",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "teste1.mean_value",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/2/cells/d09ee63b-274a-434b-9528-a91a8dfdd03c"
+				}
+			},
+			{
+				"i": "af9b9316-e6c9-44ca-b42f-5f296434cd46",
+				"x": 5,
+				"y": 0,
+				"w": 5,
+				"h": 4,
+				"name": "Fiabiliter des detection rue 2",
+				"queries": [
+					{
+						"query": "SELECT mean(\"value\") AS \"mean_value\" FROM \"etude-dijon\".\"autogen\".\"entity\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: AND \"type\"='2' AND \"street\"='rue 2' GROUP BY time(:interval:) FILL(null)",
+						"queryConfig": {
+							"database": "etude-dijon",
+							"measurement": "entity",
+							"retentionPolicy": "autogen",
+							"fields": [
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_value",
+									"args": [
+										{
+											"value": "value",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {
+								"street": [
+									"rue 2"
+								],
+								"type": [
+									"2"
+								]
+							},
+							"groupBy": {
+								"time": "auto",
+								"tags": []
+							},
+							"areTagsAccepted": true,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "/chronograf/v1/sources/1",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "bar",
+				"colors": [
+					{
+						"id": "223f82f7-dbec-4418-98d3-969d5ac75cc9",
+						"type": "scale",
+						"hex": "#8F8AF4",
+						"name": "Do Androids Dream of Electric Sheep?",
+						"value": "0"
+					},
+					{
+						"id": "478869d6-fa24-409f-a5b0-9db8fac45fe3",
+						"type": "scale",
+						"hex": "#A51414",
+						"name": "Do Androids Dream of Electric Sheep?",
+						"value": "0"
+					},
+					{
+						"id": "28d2b55b-7797-4b5c-9bcc-87556afe5cd4",
+						"type": "scale",
+						"hex": "#F4CF31",
+						"name": "Do Androids Dream of Electric Sheep?",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "teste1.mean_value",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/2/cells/af9b9316-e6c9-44ca-b42f-5f296434cd46"
+				}
+			},
+			{
+				"i": "2ecc73aa-7e0e-42d8-abb2-7761aeea3d9d",
+				"x": 0,
+				"y": 4,
+				"w": 5,
+				"h": 4,
+				"name": "Nombre de voiture Rue 1",
+				"queries": [
+					{
+						"query": "SELECT mean(\"value\") AS \"mean_value\" FROM \"etude-dijon\".\"autogen\".\"total\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: AND \"street\"='rue1' GROUP BY time(:interval:) FILL(null)",
+						"queryConfig": {
+							"database": "etude-dijon",
+							"measurement": "total",
+							"retentionPolicy": "autogen",
+							"fields": [
+								{
+									"value": "mean",
+									"type": "func",
+									"alias": "mean_value",
+									"args": [
+										{
+											"value": "value",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {
+								"street": [
+									"rue1"
+								]
+							},
+							"groupBy": {
+								"time": "auto",
+								"tags": []
+							},
+							"areTagsAccepted": true,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "/chronograf/v1/sources/1",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line",
+				"colors": [
+					{
+						"id": "bf5ba316-4dc5-4e49-bb65-01536e18ba06",
+						"type": "scale",
+						"hex": "#FD7A5D",
+						"name": "Delorean",
+						"value": "0"
+					},
+					{
+						"id": "7cf1719e-a858-4a4d-aaa2-8ea126d1a57a",
+						"type": "scale",
+						"hex": "#5F1CF2",
+						"name": "Delorean",
+						"value": "0"
+					},
+					{
+						"id": "5729e916-f11d-4782-af5c-6114f6f45827",
+						"type": "scale",
+						"hex": "#4CE09A",
+						"name": "Delorean",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "teste1.mean_value",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/2/cells/2ecc73aa-7e0e-42d8-abb2-7761aeea3d9d"
+				}
+			},
+			{
+				"i": "d51c3bcf-7097-463b-9489-3a7e096d0258",
+				"x": 5,
+				"y": 4,
+				"w": 5,
+				"h": 4,
+				"name": "Nombre de voiture rue 2",
+				"queries": [
+					{
+						"query": "SELECT \"value\" FROM \"etude-dijon\".\"autogen\".\"total\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: AND \"street\"='rue2'",
+						"queryConfig": {
+							"database": "etude-dijon",
+							"measurement": "total",
+							"retentionPolicy": "autogen",
+							"fields": [
+								{
+									"value": "value",
+									"type": "field",
+									"alias": ""
+								}
+							],
+							"tags": {
+								"street": [
+									"rue2"
+								]
+							},
+							"groupBy": {
+								"time": "",
+								"tags": []
+							},
+							"areTagsAccepted": true,
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "/chronograf/v1/sources/1",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line",
+				"colors": [
+					{
+						"id": "bf5ba316-4dc5-4e49-bb65-01536e18ba06",
+						"type": "scale",
+						"hex": "#FD7A5D",
+						"name": "Delorean",
+						"value": "0"
+					},
+					{
+						"id": "7cf1719e-a858-4a4d-aaa2-8ea126d1a57a",
+						"type": "scale",
+						"hex": "#5F1CF2",
+						"name": "Delorean",
+						"value": "0"
+					},
+					{
+						"id": "5729e916-f11d-4782-af5c-6114f6f45827",
+						"type": "scale",
+						"hex": "#4CE09A",
+						"name": "Delorean",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "teste1.mean_value",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/2/cells/d51c3bcf-7097-463b-9489-3a7e096d0258"
+				}
+			},
+			{
+				"i": "96d8a0c8-9fe5-43f1-9bd1-431957f91898",
+				"x": 0,
+				"y": 12,
+				"w": 5,
+				"h": 4,
+				"name": "Mediane gouped by 1m, fiabiliter de la prediction RUE 1",
+				"queries": [
+					{
+						"query": "SELECT median(\"value\") AS \"median_value\" FROM \"etude-dijon\".\"autogen\".\"entity\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: AND \"street\"='rue 1' GROUP BY time(1m) FILL(null)",
+						"queryConfig": {
+							"database": "etude-dijon",
+							"measurement": "entity",
+							"retentionPolicy": "autogen",
+							"fields": [
+								{
+									"value": "median",
+									"type": "func",
+									"alias": "median_value",
+									"args": [
+										{
+											"value": "value",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {
+								"street": [
+									"rue 1"
+								]
+							},
+							"groupBy": {
+								"time": "1m",
+								"tags": []
+							},
+							"areTagsAccepted": true,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "/chronograf/v1/sources/1",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "bar",
+				"colors": [
+					{
+						"id": "bf5ba316-4dc5-4e49-bb65-01536e18ba06",
+						"type": "scale",
+						"hex": "#FD7A5D",
+						"name": "Delorean",
+						"value": "0"
+					},
+					{
+						"id": "7cf1719e-a858-4a4d-aaa2-8ea126d1a57a",
+						"type": "scale",
+						"hex": "#5F1CF2",
+						"name": "Delorean",
+						"value": "0"
+					},
+					{
+						"id": "5729e916-f11d-4782-af5c-6114f6f45827",
+						"type": "scale",
+						"hex": "#4CE09A",
+						"name": "Delorean",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "teste1.mean_value",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/2/cells/96d8a0c8-9fe5-43f1-9bd1-431957f91898"
+				}
+			},
+			{
+				"i": "4164ef0e-05c6-45bb-8d19-a02bfd6aec33",
+				"x": 5,
+				"y": 12,
+				"w": 5,
+				"h": 4,
+				"name": "Mediane gouped by 1m, fiabiliter de la prediction RUE 2",
+				"queries": [
+					{
+						"query": "SELECT median(\"value\") AS \"median_value\" FROM \"etude-dijon\".\"autogen\".\"entity\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: AND \"street\"='rue 2' GROUP BY time(1m) FILL(null)",
+						"queryConfig": {
+							"database": "etude-dijon",
+							"measurement": "entity",
+							"retentionPolicy": "autogen",
+							"fields": [
+								{
+									"value": "median",
+									"type": "func",
+									"alias": "median_value",
+									"args": [
+										{
+											"value": "value",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {
+								"street": [
+									"rue 2"
+								]
+							},
+							"groupBy": {
+								"time": "1m",
+								"tags": []
+							},
+							"areTagsAccepted": true,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "/chronograf/v1/sources/1",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "bar",
+				"colors": [
+					{
+						"id": "bf5ba316-4dc5-4e49-bb65-01536e18ba06",
+						"type": "scale",
+						"hex": "#FD7A5D",
+						"name": "Delorean",
+						"value": "0"
+					},
+					{
+						"id": "7cf1719e-a858-4a4d-aaa2-8ea126d1a57a",
+						"type": "scale",
+						"hex": "#5F1CF2",
+						"name": "Delorean",
+						"value": "0"
+					},
+					{
+						"id": "5729e916-f11d-4782-af5c-6114f6f45827",
+						"type": "scale",
+						"hex": "#4CE09A",
+						"name": "Delorean",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "teste1.mean_value",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/2/cells/4164ef0e-05c6-45bb-8d19-a02bfd6aec33"
+				}
+			},
+			{
+				"i": "16438135-32f2-4736-aaaa-8cb4e4d7b496",
+				"x": 0,
+				"y": 8,
+				"w": 10,
+				"h": 4,
+				"name": "Nombre total de voiture sur la zone étudier",
+				"queries": [
+					{
+						"query": "SELECT sum(\"value\") AS \"sum_value\" FROM \"etude-dijon\".\"autogen\".\"total\" WHERE time > :dashboardTime: AND time < :upperDashboardTime: AND (\"street\"!='rue1' OR \"street\"!='rue2') GROUP BY time(:interval:) FILL(null)",
+						"queryConfig": {
+							"database": "etude-dijon",
+							"measurement": "total",
+							"retentionPolicy": "autogen",
+							"fields": [
+								{
+									"value": "sum",
+									"type": "func",
+									"alias": "sum_value",
+									"args": [
+										{
+											"value": "value",
+											"type": "field",
+											"alias": ""
+										}
+									]
+								}
+							],
+							"tags": {
+								"street": [
+									"rue1",
+									"rue2"
+								]
+							},
+							"groupBy": {
+								"time": "auto",
+								"tags": []
+							},
+							"areTagsAccepted": false,
+							"fill": "null",
+							"rawText": null,
+							"range": null,
+							"shifts": null
+						},
+						"source": "/chronograf/v1/sources/1",
+						"type": "influxql"
+					}
+				],
+				"axes": {
+					"x": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					},
+					"y2": {
+						"bounds": [
+							"",
+							""
+						],
+						"label": "",
+						"prefix": "",
+						"suffix": "",
+						"base": "10",
+						"scale": "linear"
+					}
+				},
+				"type": "line",
+				"colors": [
+					{
+						"id": "3c6860fc-dbb4-4e40-bf3d-7296bccf6681",
+						"type": "scale",
+						"hex": "#DA6FF1",
+						"name": "Ectoplasm",
+						"value": "0"
+					},
+					{
+						"id": "e3f169c7-4a8e-4c85-8321-5e57f6ba6d3e",
+						"type": "scale",
+						"hex": "#00717A",
+						"name": "Ectoplasm",
+						"value": "0"
+					},
+					{
+						"id": "554d12df-0bac-43fc-8777-a72fb8d49dec",
+						"type": "scale",
+						"hex": "#ACFF76",
+						"name": "Ectoplasm",
+						"value": "0"
+					}
+				],
+				"legend": {},
+				"tableOptions": {
+					"verticalTimeAxis": true,
+					"sortBy": {
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					"wrapping": "truncate",
+					"fixFirstColumn": true
+				},
+				"fieldOptions": [
+					{
+						"internalName": "time",
+						"displayName": "",
+						"visible": true
+					},
+					{
+						"internalName": "teste1.mean_value",
+						"displayName": "",
+						"visible": true
+					}
+				],
+				"timeFormat": "MM/DD/YYYY HH:mm:ss",
+				"decimalPlaces": {
+					"isEnforced": true,
+					"digits": 2
+				},
+				"note": "",
+				"noteVisibility": "default",
+				"links": {
+					"self": "/chronograf/v1/dashboards/2/cells/16438135-32f2-4736-aaaa-8cb4e4d7b496"
+				}
+			}
+		],
+		"templates": [],
+		"name": "Etude Dijon",
+		"organization": "default",
+		"links": {
+			"self": "/chronograf/v1/dashboards/2",
+			"cells": "/chronograf/v1/dashboards/2/cells",
+			"templates": "/chronograf/v1/dashboards/2/templates"
+		}
+	}
+}
